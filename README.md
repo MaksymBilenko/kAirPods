@@ -18,6 +18,7 @@ Native **AirPods®** integration for **KDE Plasma 6** powered by a modern, low-l
 - 🔋 **Real-time battery monitoring** for AirPods, AirPods Max, case, and individual earbuds
 - 🔇 **Noise control** switching between ANC, Transparency, and Off modes
 - 👂 **Ear detection** status and control
+- ⏯️ **Auto play/pause** - Automatically pauses media when AirPods are removed and resumes when reinserted
 - 🎨 **Native Plasma integration** with theme-aware panel widget
 - ⚡ **Zero-lag Bluetooth L2CAP** communication for instant updates
 - 🔧 **System-wide D-Bus service** architecture (no root required)
