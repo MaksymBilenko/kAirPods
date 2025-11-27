@@ -70,10 +70,15 @@ pub async fn send_pause() {
       }
    };
 
-   // Find all MPRIS media players
+   // Find all MPRIS media players (excluding KDE Connect, which is for remote control)
    let mpris_services: Vec<_> = names
       .iter()
-      .filter(|name| name.starts_with("org.mpris.MediaPlayer2."))
+      .filter(|name| {
+         let name_str = name.as_str();
+         name_str.starts_with("org.mpris.MediaPlayer2.")
+            && !name_str.contains("kdeconnect")
+            && !name_str.contains("KDEConnect")
+      })
       .collect();
 
    if mpris_services.is_empty() {
